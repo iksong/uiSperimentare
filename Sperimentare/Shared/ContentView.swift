@@ -42,10 +42,16 @@ struct NotSureView: View {
                 } label: {
                     Text("I'm flexible")
                         .font(.system(size: 24, weight: .bold))
-                        .foregroundColor(.teal)
                         .frame(width: 150, height: 80, alignment: .center)
                         .background(.white)
                         .cornerRadius(60)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.red, .blue, .green, .yellow],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                 }
             }
         }

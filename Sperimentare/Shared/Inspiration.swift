@@ -28,7 +28,7 @@ struct HeaderView: View {
     
     var body: some View {
         Text(title)
-            .font(.system(size: 30, weight: .bold))
+            .font(.system(size: 26, weight: .bold))
             .multilineTextAlignment(.leading)
             .foregroundColor(Color.black)
     }
