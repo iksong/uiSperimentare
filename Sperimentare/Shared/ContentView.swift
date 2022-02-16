@@ -18,8 +18,8 @@ struct ContentView: View {
                 WhereToSearchBar(searchText: $searchText)
                 NotSureView()
                 HeaderView(title: "Inspiration for your \nnext trip")
+                    .offset(x: -50, y: 0)
                 InspirationGrid(items: items)
-                    .padding(.leading, 30)
             }
         }
         .background(Color.yellow)

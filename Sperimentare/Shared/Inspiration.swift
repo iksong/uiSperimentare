@@ -19,6 +19,7 @@ struct InspirationGrid: View {
                     Inspiration(item: item)
                 }
             }
+            .offset(x: 20, y: 0)
         }
     }
 }
@@ -58,15 +59,21 @@ struct Inspiration: View {
         ZStack {
             VStack {
                 Image(systemName: item.imageName)
-                    .frame(width: 150, height: 150)
+                    .frame(width: 200, height: 120)
+                    .foregroundColor(.pink)
                     .background(.white)
-                Text(item.title)
-                    .font(.largeTitle)
-                Text(item.subTitle)
-                    .font(.headline)
-            }
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(item.title)
+                        .font(.system(size: 24, weight: .bold))
+                    Text(item.subTitle)
+                        .font(.headline)
+                }
+                .padding(.leading, 15)
+                .frame(width: 200, alignment: .leading)
+                Spacer()
+            }.frame(height: 250, alignment: .leading)
         }
         .background(item.color)
-        .frame(height: 300)
+        .cornerRadius(15)
     }
 }
