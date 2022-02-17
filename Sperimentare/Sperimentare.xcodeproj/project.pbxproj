@@ -24,6 +24,7 @@
 		49CB6EFC27BDB42F005BA3C9 /* himalaya.png in Resources */ = {isa = PBXBuildFile; fileRef = 49CB6EFB27BDB42F005BA3C9 /* himalaya.png */; };
 		49CB6EFE27BDB53B005BA3C9 /* NotSureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB6EFD27BDB53B005BA3C9 /* NotSureView.swift */; };
 		49CB6F0027BDB562005BA3C9 /* Experiences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB6EFF27BDB562005BA3C9 /* Experiences.swift */; };
+		49CB6F2927BEE798005BA3C9 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB6F2827BEE798005BA3C9 /* Support.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		49CB6EFB27BDB42F005BA3C9 /* himalaya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = himalaya.png; sourceTree = "<group>"; };
 		49CB6EFD27BDB53B005BA3C9 /* NotSureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSureView.swift; sourceTree = "<group>"; };
 		49CB6EFF27BDB562005BA3C9 /* Experiences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiences.swift; sourceTree = "<group>"; };
+		49CB6F2827BEE798005BA3C9 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				4966D99927BC1CFF00F9C37F /* ContentView.swift */,
 				49CB6EFF27BDB562005BA3C9 /* Experiences.swift */,
 				49CB6EFD27BDB53B005BA3C9 /* NotSureView.swift */,
+				49CB6F2827BEE798005BA3C9 /* Support.swift */,
 				4966D9D727BC608D00F9C37F /* Search.swift */,
 				4966D9D427BC606500F9C37F /* Inspiration.swift */,
 				4966D99A27BC1D0000F9C37F /* Assets.xcassets */,
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CB6F2927BEE798005BA3C9 /* Support.swift in Sources */,
 				4966D9D527BC606500F9C37F /* Inspiration.swift in Sources */,
 				4966D9D827BC608D00F9C37F /* Search.swift in Sources */,
 				4966D9C227BC1D0000F9C37F /* ContentView.swift in Sources */,

@@ -11,6 +11,7 @@ struct ContentView: View {
     @State var searchText = ""
     
     let items = InspireItem.allItems()
+    let supportSections = SupportSection.allSections
     
     var body: some View {
         ScrollView {
@@ -24,6 +25,7 @@ struct ContentView: View {
                 HeaderView(title: "Discover Experiences")
                     .offset(x: -40, y: 0)
                 Experience()
+                SupportGrid(items: supportSections)
             }
         }
         .background(Color.yellow)
