@@ -17,5 +17,6 @@ jobs:
       - name: Build
         env:
           scheme: Sperimentare
+        working-directory: Sperimentare
         run: |
           xcodebuild clean build -scheme "Sperimentare" -project "Sperimentare.xcodeproj"
