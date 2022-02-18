@@ -19,4 +19,4 @@ jobs:
           scheme: Sperimentare
         working-directory: Sperimentare
         run: |
-          xcodebuild clean build -scheme "Sperimentare (iOS)" -project "Sperimentare.xcodeproj"
+          xcodebuild clean build -scheme "Sperimentare (iOS)" -project "Sperimentare.xcodeproj" -sdk iphonesimulator
