@@ -18,4 +18,4 @@ jobs:
         env:
           scheme: Sperimentare
         run: |
-          xcodebuild clean build analyze -scheme "$scheme" -Sperimentare.xcodeproj
+          xcodebuild clean build analyze -scheme "$scheme" -project Sperimentare.xcodeproj
