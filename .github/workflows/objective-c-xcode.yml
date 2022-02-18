@@ -18,4 +18,5 @@ jobs:
         env:
           scheme: Sperimentare
         run: |
-          xcodebuild clean build analyze -scheme "$scheme" -project Sperimentare.xcodeproj
+          echo $pwd
+          xcodebuild clean build analyze -scheme Sperimentare -project Sperimentare.xcodeproj
