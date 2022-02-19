@@ -25,6 +25,7 @@
 		49CB6EFE27BDB53B005BA3C9 /* NotSureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB6EFD27BDB53B005BA3C9 /* NotSureView.swift */; };
 		49CB6F0027BDB562005BA3C9 /* Experiences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB6EFF27BDB562005BA3C9 /* Experiences.swift */; };
 		49CB6F2927BEE798005BA3C9 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB6F2827BEE798005BA3C9 /* Support.swift */; };
+		49CB6F2B27C13568005BA3C9 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB6F2A27C13568005BA3C9 /* Explore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		49CB6EFD27BDB53B005BA3C9 /* NotSureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSureView.swift; sourceTree = "<group>"; };
 		49CB6EFF27BDB562005BA3C9 /* Experiences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiences.swift; sourceTree = "<group>"; };
 		49CB6F2827BEE798005BA3C9 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		49CB6F2A27C13568005BA3C9 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				49CB6EFA27BDB422005BA3C9 /* Resources */,
 				4966D99827BC1CFF00F9C37F /* SperimentareApp.swift */,
 				4966D99927BC1CFF00F9C37F /* ContentView.swift */,
+				49CB6F2A27C13568005BA3C9 /* Explore.swift */,
 				49CB6EFF27BDB562005BA3C9 /* Experiences.swift */,
 				49CB6EFD27BDB53B005BA3C9 /* NotSureView.swift */,
 				49CB6F2827BEE798005BA3C9 /* Support.swift */,
@@ -335,6 +338,7 @@
 				49CB6EFE27BDB53B005BA3C9 /* NotSureView.swift in Sources */,
 				4966D9C027BC1D0000F9C37F /* SperimentareApp.swift in Sources */,
 				49CB6F0027BDB562005BA3C9 /* Experiences.swift in Sources */,
+				49CB6F2B27C13568005BA3C9 /* Explore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

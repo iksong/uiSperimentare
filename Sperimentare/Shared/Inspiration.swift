@@ -46,9 +46,9 @@ struct InspireItem: Identifiable {
 extension InspireItem {
     static func allItems() -> [InspireItem] {
         return [
-            InspireItem(color: .green, title: "Broken", subTitle: "157 miles away", imageName: "circle.grid.cross.left.filled"),
-            InspireItem(color: .purple, title: "Galveston", subTitle: "280 miles away", imageName: "externaldrive.connected.to.line.below.fill"),
-            InspireItem(color: .red, title: "Santa Fe", subTitle: "970 miles away", imageName: "l.joystick.tilt.up")
+            InspireItem(color: Color.random, title: "Broken", subTitle: "157 miles away", imageName: "circle.grid.cross.left.filled"),
+            InspireItem(color: Color.random, title: "Galveston", subTitle: "280 miles away", imageName: "externaldrive.connected.to.line.below.fill"),
+            InspireItem(color: Color.random, title: "Santa Fe", subTitle: "970 miles away", imageName: "l.joystick.tilt.up")
         ]
     }
 }
