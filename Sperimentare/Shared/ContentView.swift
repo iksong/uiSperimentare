@@ -18,7 +18,7 @@ struct ContentView: View {
                 .tabItem {
                     Label(TabbarItem.wishlists.title, systemImage: TabbarItem.wishlists.imageName)
                 }
-        }.accentColor(.white)
+        }.accentColor(.pink)
     }
 }
 
