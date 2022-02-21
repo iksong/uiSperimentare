@@ -14,20 +14,24 @@ struct Explore: View {
     let supportSections = SupportSection.allSections
     
     var body: some View {
-        ScrollView {
-            VStack {
-                WhereToSearchBar(searchText: $searchText)
-                NotSureView()
-                HeaderView(title: "Inspiration for your \nnext trip")
-                    .offset(x: -50, y: 0)
-                InspirationGrid(items: items)
-                    .padding(.bottom, 50)
-                HeaderView(title: "Discover Experiences")
-                    .offset(x: -40, y: 0)
-                Experience()
-                SupportGrid(items: supportSections)
+        ZStack(alignment: .topLeading) {
+            ScrollView {
+                VStack {
+                    NotSureView()
+                    HeaderView(title: "Inspiration for your \nnext trip")
+                        .offset(x: -50, y: 0)
+                    InspirationGrid(items: items)
+                        .padding(.bottom, 50)
+                    HeaderView(title: "Discover Experiences")
+                        .offset(x: -40, y: 0)
+                    Experience()
+                    SupportGrid(items: supportSections)
+                }
             }
+            .ignoresSafeArea()
+            WhereToSearchBar(searchText: $searchText)
+                .background(.clear)
         }
-        .background(Color.white)
+        .background(.white)
     }
 }

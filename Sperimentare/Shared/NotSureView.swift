@@ -12,12 +12,12 @@ struct NotSureView: View {
         ZStack {
             Image("paris")
                 .resizable()
-            VStack(spacing: 40) {
+            VStack(spacing: 20) {
                 Text("Not sure where to go? \nPerfect.")
                     .multilineTextAlignment(.center)
                     .foregroundColor(.black)
                     .font(.system(size: 30, weight: .bold))
-                
+                    .padding(.top, 80)
                 Button {
                     print("flexible clicked")
                 } label: {
