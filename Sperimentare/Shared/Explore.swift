@@ -12,10 +12,22 @@ struct Explore: View {
     
     let items = InspireItem.allItems()
     let supportSections = SupportSection.allSections
+    @State var didScroll = false
+    
+    var searchBackgroundColor: Color {
+        return didScroll ? .white : .clear
+    }
     
     var body: some View {
         ZStack(alignment: .topLeading) {
             ScrollView {
+                GeometryReader { geometry in
+                                Color.clear.preference(
+                                    key: ScrollOffsetPreferenceKey.self,
+                                    value: geometry.frame(in: .named("scrollView")).origin
+                                )
+                            }.frame(width: 0, height: 0)
+                
                 VStack {
                     NotSureView()
                     HeaderView(title: "Inspiration for your \nnext trip")
@@ -29,9 +41,28 @@ struct Explore: View {
                 }
             }
             .ignoresSafeArea()
-            WhereToSearchBar(searchText: $searchText)
-                .background(.clear)
+            .offset(x: 0, y: -60)
+            .coordinateSpace(name: "scrollView")
+            .onPreferenceChange(ScrollOffsetPreferenceKey.self, perform: offsetChanged)
+            
+            WhereToSearchBar(searchText: $searchText, didScroll: $didScroll)
+                .background(searchBackgroundColor)
         }
         .background(.white)
     }
+    
+    func offsetChanged(_ offset: CGPoint) {
+        if offset.y < -80 {
+            didScroll = true
+        } else {
+            didScroll = false
+        }
+    }
+}
+
+
+struct ScrollOffsetPreferenceKey: PreferenceKey {
+    static var defaultValue: CGPoint = .zero
+    
+    static func reduce(value: inout CGPoint, nextValue: () -> CGPoint) {}
 }

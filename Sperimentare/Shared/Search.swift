@@ -26,10 +26,17 @@ extension View {
 
 struct WhereToSearchBar: View {
     @Binding var searchText: String
+    @Binding var didScroll: Bool
+    
+    var rectangelColor: Color {
+        return didScroll ? Color(white: 0.95) : .white
+    }
+    
     var body: some View {
         ZStack {
-            Rectangle()
-                .foregroundColor(.white)
+            RoundedRectangle(cornerRadius: 20)
+                .foregroundColor(rectangelColor)
+            
             HStack(alignment: .center) {
                 Spacer(minLength: 30)
                 Image(systemName: "magnifyingglass")
@@ -45,7 +52,6 @@ struct WhereToSearchBar: View {
             }
         }
         .frame(height: 60)
-        .cornerRadius(25)
         .padding()
     }
     
