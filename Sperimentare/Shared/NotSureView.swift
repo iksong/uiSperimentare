@@ -10,12 +10,12 @@ import SwiftUI
 struct NotSureView: View {
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.yellow, .teal], startPoint: .top, endPoint: .bottom)
-
+            Image("paris")
+                .resizable()
             VStack(spacing: 40) {
                 Text("Not sure where to go? \nPerfect.")
                     .multilineTextAlignment(.center)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .font(.system(size: 30, weight: .bold))
                 
                 Button {

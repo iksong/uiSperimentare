@@ -28,6 +28,6 @@ struct Explore: View {
                 SupportGrid(items: supportSections)
             }
         }
-        .background(Color.yellow)
+        .background(Color.white)
     }
 }

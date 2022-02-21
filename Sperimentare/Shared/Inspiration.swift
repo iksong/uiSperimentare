@@ -57,11 +57,13 @@ struct Inspiration: View {
     let item: InspireItem
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: 15) {
                 Image(systemName: item.imageName)
-                    .frame(width: 200, height: 120)
-                    .foregroundColor(.pink)
-                    .background(.white)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 100)
+                    .foregroundColor(.white)
+                    .background(.teal)
                 VStack(alignment: .leading, spacing: 5) {
                     Text(item.title)
                         .font(.system(size: 24, weight: .bold))
