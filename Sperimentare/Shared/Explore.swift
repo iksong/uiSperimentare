@@ -50,7 +50,6 @@ struct Explore: View {
                     .background(searchBackgroundColor)
             }
             .background(.white)
-            .navigationTitle("")
             .navigationBarHidden(true)
         }
     }
