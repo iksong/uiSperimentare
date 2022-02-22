@@ -13,7 +13,7 @@ struct Experience: View {
         ZStack(alignment: .topLeading) {
             Image("himalaya")
                 .resizable()
-                .frame(width: 360, height: 500, alignment: .top)
+                .frame(width: UIScreen.main.bounds.width*0.9, height: UIScreen.main.bounds.height*0.5, alignment: .top)
             
             VStack(alignment: .leading, spacing: 15) {
                 Text("Things to do \non your trip")

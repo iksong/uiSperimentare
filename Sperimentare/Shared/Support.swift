@@ -120,7 +120,7 @@ struct SupportGrid: View {
                             .offset(x: 15, y: 0)
                         Spacer()
                     }
-                    .frame(width: 300, height: 340)
+                    .frame(width: UIScreen.main.bounds.width*0.8, height: 340)
                     .background(.white)
                 }
             }
