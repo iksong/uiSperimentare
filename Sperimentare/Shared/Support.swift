@@ -72,6 +72,21 @@ struct SupportCell: View {
     }
 }
 
+struct SupportDetail: View {
+    let item: SupportItem
+    
+    var body: some View {
+        VStack(spacing: 40) {
+            Text(item.title)
+                .font(.system(size: 36, weight: .bold))
+                .foregroundColor(Color.random)
+            Text(item.title)
+                .font(.system(size: 20))
+                .foregroundColor(Color.random)
+        }
+    }
+}
+
 struct SupportHeadCell: View {
     let section: SupportSection
     var body: some View {
@@ -81,7 +96,11 @@ struct SupportHeadCell: View {
                 .font(.system(size: 18))
                 .foregroundColor(.black.opacity(0.8))
             ForEach(section.items) { item in
-                SupportCell(title: item.title, subTitle: item.subTitle)
+                NavigationLink {
+                    SupportDetail(item: item)
+                } label: {
+                    SupportCell(title: item.title, subTitle: item.subTitle)
+                }
             }
         }
     }
